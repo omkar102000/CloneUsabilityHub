@@ -1,0 +1,135 @@
+@media screen and (max-width: 991px) {
+    h3 {
+        font-size: 1.2rem;
+    }
+
+    .nav-toggle {
+        display: block;
+        margin-right: 20px;
+    }
+
+    .main-nav {
+        overflow: initial;
+    }
+
+    .nav-links {
+        width: 100%;
+        padding-block: 20px;
+        position: absolute;
+        right: -100%;
+        top: 100%;
+        padding-block: 20px;
+        background-color: white;
+        transition: 0.2s ease-in-out;
+    }
+
+    
+    .nav-links.active {
+        right: 0;
+    }
+
+    
+
+    .nav-links ul {
+        flex-direction: column;
+    }
+
+    .examples-area {
+        gap: 20px;
+    }
+
+    .examples-card {
+        width: calc(50% - 10px);
+        height: 180px;
+    }
+
+    .cta-section {
+        padding-block: 80px;
+    }
+
+    .companies {
+        justify-content: space-evenly;
+    }
+}
+
+/* ------------------------ */
+
+@media screen and (max-width: 767px) {
+
+    .header-main {
+        flex-direction: column-reverse;
+    }
+
+    .header-left {
+        max-width: 100vw;
+        text-align: center;
+    }
+
+    .primary-button {
+        width: 100%;
+    }
+
+    .fcard {
+        min-width: calc(50% - 10px);
+    }
+
+
+    .big-features-container {
+        flex-direction: column;
+    }
+
+    #second-feat {
+        flex-direction: column-reverse;
+    }
+
+    .examples-section {
+        padding: 50px var(--padding-inline-section);
+    }
+
+    .footer-container {
+        flex-direction: column;
+        align-items: center;
+        gap: 40px;
+
+    }
+
+    .link-column {
+        align-items: center;
+    }
+
+    footer {
+        padding-block: 40px;
+    }
+}
+
+/* ---------------------- */
+
+@media screen and (max-width: 479px) {
+    :root {
+        --padding-inline-section: 10px;
+    }
+
+    h1 {
+        font-size: 2rem;
+    }
+
+    h2 {
+        font-size: 1.5rem;
+    }
+
+    p {
+        font-size: 1rem;
+    }
+
+    .fcard {
+        min-width: 100%;
+    }
+
+    .main-nav {
+        margin-top: 10px;
+    }
+
+    .examples-card {
+        width: 100%;
+    }
+}
